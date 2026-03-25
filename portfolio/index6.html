@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+    
+        <title>我的前端轉職之路</title>
+    
+        
+        
+    </head>
+
+    <body>
+    <div class="container">
+
+    <h1>王小明的前端轉職之路</h1>
+
+    </div>
+    <div class="profile">
+    <img src="/06/images/profile.jpg" alt="我的照片" width="150">
+    <div>
+    <h2>關於我</h2>
+    <p>我正在學習前端工程，希望三個月內轉職成功。</p>
+    </div>
+    </div>
+    <h2>我的技能</h2>
+
+    <button onclick="toggleSkills()">
+        查看技能
+    </button>
+    <ul id="skills">
+    
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    </ul>
+
+    <h2>我的作品</h2>
+
+    <div class="project-card" onclick="openModal()">
+    
+        <h3>我的第一個網站</h3>
+        <p>HTML + CSS製作</p>
+    </div>
+
+    <div class="projects">
+    <div class="project">
+    <h3>作品1</h3>
+    
+    <p>我的第一個 HTML 網頁</p>
+
+    <a class="btn" href="./projects/project1.html">
+        查看作品
+    </a>
+    </div>
+
+    <div class="project">
+    <h3>作品2</h3>
+    <p>CSS 排版練習</p>
+    </div>
+
+    <div class="project">
+    <h3>作品3</h3>
+    <p>Flexbox 練習</p>
+    </div>
+    </div>
+
+
+    <h2>聯絡我</h2>
+    <p>Email: test@gmail.com</p>
+    <a class="btn" href="#">GitHub</a>
+ 
+ <script>
+        console.log("Hello JavaScript");
+    </script>    
+
+    <button onclick="sayHello()">點我</button>
+<script>
+    function sayHello(){
+    alert("歡迎來到我的網站")
+    }
+</script>
+<script>
+    function toggleSkills(){
+    let skills = document.getElementById("skills");
+
+    if(skills.style.display === "none"){
+    skills.style.display = "block";
+    }else{
+    skills.style.display = "none";
+    }
+
+    }
+</script>
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">
+X
+</span>
+
+<h2>我的第一個網站</h2>
+
+<p>這是我用 HTML + CSS 製作的第一個網站</p>
+</div>
+</div>
+
+<script>
+function openModal(){
+document.getElementById("modal").style.display="block";
+}
+
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
+</script>
+</body>
+
+   
+    
+</html>
